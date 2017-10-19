@@ -1,0 +1,753 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/MOOCOntology#"
+     xml:base="http://www.semanticweb.org/MOOCOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/MOOCOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#belongsToDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#belongsToDirection">
+        <rdfs:label xml:lang="en">Belongs to Direction</rdfs:label>
+        <rdfs:label xml:lang="ru">Входит в направление</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#belongsToSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#belongsToSubject">
+        <rdfs:label xml:lang="en">Belongs to subject</rdfs:label>
+        <rdfs:label xml:lang="ru">Входит в предмет</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#designedForAudience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#designedForAudience">
+        <rdfs:label xml:lang="en">Designed for Audience</rdfs:label>
+        <rdfs:label xml:lang="ru">Разработан для аудитории</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Audience"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#formsCompetency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#formsCompetency">
+        <rdfs:label xml:lang="en">Forms competency</rdfs:label>
+        <rdfs:label xml:lang="ru">Формирует компетенцию</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#formsProfession -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#formsProfession">
+        <rdfs:label xml:lang="en">Forms profession</rdfs:label>
+        <rdfs:label xml:lang="ru">Формирует профессию</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Profession"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasFeedback">
+        <rdfs:label xml:lang="en">Has feedback</rdfs:label>
+        <rdfs:label xml:lang="ru">Имеет отзыв</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#hasSubtitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasSubtitle">
+        <rdfs:label xml:lang="en">Has subtitle</rdfs:label>
+        <rdfs:label xml:lang="ru">Имеет субтитры</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Subtitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#hasTag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasTag">
+        <rdfs:label xml:lang="en">Has tag</rdfs:label>
+        <rdfs:label xml:lang="ru">Имеет теги</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#includesCompetency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#includesCompetency">
+        <rdfs:label xml:lang="en">Includes Competency</rdfs:label>
+        <rdfs:label xml:lang="ru">Включает компетенцию</rdfs:label>
+        <rdfs:comment xml:lang="ru">Перечень компетенций, приобретаемых пользователем после успешного прохождения курса</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#isCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#isCreatedBy">
+        <rdfs:label xml:lang="en">Is created by</rdfs:label>
+        <rdfs:label xml:lang="ru">Создан</rdfs:label>
+        <rdfs:comment xml:lang="ru">Преподаватель создает курс</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#isOrganizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#isOrganizedBy">
+        <rdfs:label xml:lang="en">is organized by</rdfs:label>
+        <rdfs:label xml:lang="ru">Организован</rdfs:label>
+        <rdfs:comment xml:lang="ru">Провайдер курсов</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Organizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#isSimilarTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#isSimilarTo">
+        <rdfs:label xml:lang="en">Is similar to</rdfs:label>
+        <rdfs:label xml:lang="ru">Похож</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#isTakenByGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#isTakenByGroup">
+        <rdfs:label xml:lang="en">Is taken by group</rdfs:label>
+        <rdfs:label xml:lang="ru">Изучается группой</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#learnAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#learnAfter">
+        <rdfs:label xml:lang="en">Learn after</rdfs:label>
+        <rdfs:label xml:lang="ru">Предшествующий курс</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#partOfDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#partOfDirection">
+        <rdfs:label xml:lang="en">Part of direction</rdfs:label>
+        <rdfs:label xml:lang="ru">Часть направления</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Direction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#requiresCompetency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#requiresCompetency">
+        <rdfs:label xml:lang="en">Requires competency</rdfs:label>
+        <rdfs:label xml:lang="ru">Требует компетенцию</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Profession"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#approveState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#approveState">
+        <rdfs:label xml:lang="en">Approve State</rdfs:label>
+        <rdfs:label xml:lang="ru">Статус проверки</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#certificationConditions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#certificationConditions">
+        <rdfs:label xml:lang="en">Certification conditions</rdfs:label>
+        <rdfs:label xml:lang="ru">Условия для получения сертификата</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#courseTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#courseTitle">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="ru">Название курса</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#creationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#creationDate">
+        <rdfs:label xml:lang="en">Created date</rdfs:label>
+        <rdfs:label xml:lang="ru">Дата создания</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#credits">
+        <rdfs:label xml:lang="en">Credits</rdfs:label>
+        <rdfs:label xml:lang="ru">Количество зачётных единиц</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#currency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#currency">
+        <rdfs:label xml:lang="en">Currency</rdfs:label>
+        <rdfs:label xml:lang="ru">Валюта</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#description">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:label xml:lang="ru">Описание</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#effort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#effort">
+        <rdfs:label xml:lang="en">Effort</rdfs:label>
+        <rdfs:label xml:lang="ru">Нагрузка</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#endDate">
+        <rdfs:label xml:lang="en">End date</rdfs:label>
+        <rdfs:label xml:lang="ru">Дата окончания курса</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#expertRatings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#expertRatings">
+        <rdfs:label xml:lang="en">Expert Ratings</rdfs:label>
+        <rdfs:label xml:lang="ru">Рейтинг (Экспертный)</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#feedback -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#feedback">
+        <rdfs:label xml:lang="en">Feedback</rdfs:label>
+        <rdfs:label xml:lang="ru">Отзыв</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Feedback"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#format -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#format">
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <rdfs:label xml:lang="ru">Формат</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#fullDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#fullDescription">
+        <rdfs:label xml:lang="en">Full description</rdfs:label>
+        <rdfs:label xml:lang="ru">Расширенное описание</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:label xml:lang="ru">Язык</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Subtitle"/>
+        <rdfs:range rdf:resource="&xsd;language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#length">
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+        <rdfs:label xml:lang="ru">Длительность курса</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#numberOfCases -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#numberOfCases">
+        <rdfs:label xml:lang="en">Number of cases</rdfs:label>
+        <rdfs:label xml:lang="ru">Количество кейсов</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#numberOfParticipants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#numberOfParticipants">
+        <rdfs:label xml:lang="en">Number of participants</rdfs:label>
+        <rdfs:label xml:lang="ru">Количество участников</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#organizerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#organizerName">
+        <rdfs:label xml:lang="en">Organizer name</rdfs:label>
+        <rdfs:label xml:lang="ru">Название организатора</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Organizer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#price">
+        <rdfs:label xml:lang="en">Price</rdfs:label>
+        <rdfs:label xml:lang="ru">Цена</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#programm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#programm">
+        <rdfs:label xml:lang="en">Programm</rdfs:label>
+        <rdfs:label xml:lang="ru">Программа</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#ratings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#ratings">
+        <rdfs:label xml:lang="en">Ratings</rdfs:label>
+        <rdfs:label xml:lang="ru">Рейтинг</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#registrationDaysLeft -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#registrationDaysLeft">
+        <rdfs:label xml:lang="en">Registration days left</rdfs:label>
+        <rdfs:label xml:lang="ru">Дней до конца записи</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#registrationEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#registrationEndDate">
+        <rdfs:label xml:lang="en">Registration end date</rdfs:label>
+        <rdfs:label xml:lang="ru">Дата окончания регистрации</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#source">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:label xml:lang="ru">Ссылка</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#sourceState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#sourceState">
+        <rdfs:label xml:lang="en">Source State</rdfs:label>
+        <rdfs:label xml:lang="ru">Статус курса с Площадки</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#startDate">
+        <rdfs:label xml:lang="en">Start date</rdfs:label>
+        <rdfs:label xml:lang="ru">Дата начала курса</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#teacherName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#teacherName">
+        <rdfs:label xml:lang="en">Teacher&apos;s name</rdfs:label>
+        <rdfs:label xml:lang="ru">ФИО преподавателя</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#teachersAcademicDegree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#teachersAcademicDegree">
+        <rdfs:label xml:lang="en">Academic degree</rdfs:label>
+        <rdfs:label xml:lang="ru">Ученая степень</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#teachersPhoto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#teachersPhoto">
+        <rdfs:label xml:lang="en">Teacher&apos;s photo</rdfs:label>
+        <rdfs:label xml:lang="ru">Фото преподавателя</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#teachersPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#teachersPosition">
+        <rdfs:label xml:lang="en">Teachers&apos;s position</rdfs:label>
+        <rdfs:label xml:lang="ru">Должность</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#termsOfParticipation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#termsOfParticipation">
+        <rdfs:label xml:lang="en">Terms of participation</rdfs:label>
+        <rdfs:label xml:lang="ru">Условия участия</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#updateDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#updateDate">
+        <rdfs:label xml:lang="en">Update date</rdfs:label>
+        <rdfs:label xml:lang="ru">Дата изменения</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#userRatings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#userRatings">
+        <rdfs:label xml:lang="en">User Ratings</rdfs:label>
+        <rdfs:label xml:lang="ru">Рейтинг (Пользовательский)</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#version">
+        <rdfs:label xml:lang="en">Version</rdfs:label>
+        <rdfs:label xml:lang="ru">Версия</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#videoPresentation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#videoPresentation">
+        <rdfs:label xml:lang="en">Video presentation</rdfs:label>
+        <rdfs:label xml:lang="ru">Видео-презентация</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Audience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Audience">
+        <rdfs:label xml:lang="en">Audience</rdfs:label>
+        <rdfs:label xml:lang="ru">Аудитория</rdfs:label>
+        <rdfs:comment xml:lang="ru">Для каждого курса определяется один элемент справочника Аудиторий. Возможно несколько однотипных курсов, но для разных аудиторий (например, учителя и студенты). Может быть и текстовым полем.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Competency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Competency">
+        <rdfs:label xml:lang="en">Competency</rdfs:label>
+        <rdfs:label xml:lang="ru">Формируемые компетенции</rdfs:label>
+        <rdfs:comment xml:lang="ru">Заполняется навыками, которые студенты получат, изучив курс</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Course">
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+        <rdfs:label xml:lang="ru">Курс</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Direction">
+        <rdfs:label xml:lang="en">Direction</rdfs:label>
+        <rdfs:label xml:lang="ru">Направление подготовки</rdfs:label>
+        <rdfs:comment xml:lang="ru">Примерно тоже самое, что и &quot;Предмет&quot;, но более гибкий. В поле не только предметы, но и их объединения. Например, &quot;Биологические науки&quot;. Ииерархический справочник с возможностью выбора заголовка. Возможен множественный выбор.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Feedback">
+        <rdfs:label xml:lang="en">Feedback</rdfs:label>
+        <rdfs:label xml:lang="ru">Отзыв</rdfs:label>
+        <rdfs:comment xml:lang="ru">Фото пользователя, ФИО, роль (эксперт/пользователь), дата публикации, оценка, отзыв</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Group">
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+        <rdfs:label xml:lang="ru">Группа</rdfs:label>
+        <rdfs:comment xml:lang="ru">Для каждой группы задается своя дата начала и окончания. Встречается редко и чаще всего используется для тестирования куса перед полноценным запуском</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Material">
+        <rdfs:label xml:lang="en">Materials</rdfs:label>
+        <rdfs:label xml:lang="ru">Материалы</rdfs:label>
+        <rdfs:comment xml:lang="ru">В поле указывается количество аудио, видео материалов, количество лекций, количество текстов, модулей</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Organizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Organizer">
+        <rdfs:label xml:lang="en">Organizer</rdfs:label>
+        <rdfs:label xml:lang="ru">Организатор</rdfs:label>
+        <rdfs:comment xml:lang="ru">Организация, которая является организатором курса. Возможны множественные значения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Profession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Profession">
+        <rdfs:label xml:lang="en">Profession</rdfs:label>
+        <rdfs:label xml:lang="ru">Профессия</rdfs:label>
+        <rdfs:comment xml:lang="ru">Указывается профессия, в осовоении которой необходим данный курс. Возможны множественные значения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:label xml:lang="ru">Предмет</rdfs:label>
+        <rdfs:comment xml:lang="ru">В поле определяются предметы, к которым относится курс (математика, физика, инженерное дело и пр). MOOC</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Subtitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Subtitle">
+        <rdfs:label xml:lang="en">Subtitle</rdfs:label>
+        <rdfs:label xml:lang="ru">Субтитры</rdfs:label>
+        <rdfs:comment xml:lang="ru">Субтитры, предоставляемые к видеолекциям курса. Возможно существование субтиторов на нескольких языках</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Tag">
+        <rdfs:label xml:lang="en">Tags</rdfs:label>
+        <rdfs:label xml:lang="ru">Теги</rdfs:label>
+        <rdfs:comment xml:lang="ru">Облако тегов для идентификации курса по ключевым словам</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Teacher">
+        <rdfs:label xml:lang="en">Teacher</rdfs:label>
+        <rdfs:label xml:lang="ru">Преподаватель</rdfs:label>
+        <rdfs:comment xml:lang="ru">ФИО преподавателя указывается с фото, должностью (иногда степенью),  местом работы, городом. В ряде случаев встречется расширенное описание одним полем. Предпочтителен справочник преподавателей. Возможны множественные значения. Для оптимизации справочника преподавателей предлагаю выводить ФИО и давать ссылку на профиль, если есть у Источника</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
