@@ -96,6 +96,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/MOOCOntology#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Material"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/MOOCOntology#hasSubtitle -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasSubtitle">
@@ -800,9 +809,9 @@
 Анализ
 Ряды
 ТФКП</programm>
-        <certificationConditions>CS100500 Продвинутая математика</certificationConditions>
-        <userRatings>4,8</userRatings>
         <registrationEndDate>30.12.2087</registrationEndDate>
+        <userRatings>4,8</userRatings>
+        <certificationConditions>CS100500 Продвинутая математика</certificationConditions>
         <effort>10 часов в неделю</effort>
         <ratings>4,7</ratings>
         <creationDate>01.10.1989</creationDate>
@@ -822,12 +831,14 @@
         <formsProfession rdf:resource="http://www.semanticweb.org/MOOCOntology#Инженер"/>
         <isCreatedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Кержаков_Александр_Сергеевич"/>
         <formsCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить"/>
+        <formsCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать"/>
         <hasTag rdf:resource="http://www.semanticweb.org/MOOCOntology#Матан"/>
         <hasFeedback rdf:resource="http://www.semanticweb.org/MOOCOntology#Отличный_отзыв_о_курсе"/>
         <designedForAudience rdf:resource="http://www.semanticweb.org/MOOCOntology#Студенты"/>
         <hasSubtitle rdf:resource="http://www.semanticweb.org/MOOCOntology#Субтитры1"/>
         <belongsToDirection rdf:resource="http://www.semanticweb.org/MOOCOntology#Технические_науки"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Университет_ИТМО"/>
+        <hasMaterial rdf:resource="http://www.semanticweb.org/MOOCOntology#Учебник_Таненбума"/>
         <belongsToSubject rdf:resource="http://www.semanticweb.org/MOOCOntology#ЭВМ"/>
         <hasTag rdf:resource="http://www.semanticweb.org/MOOCOntology#сложна"/>
     </owl:NamedIndividual>
@@ -884,6 +895,14 @@
     <!-- http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать">
         <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
     </owl:NamedIndividual>
     
