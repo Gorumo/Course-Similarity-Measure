@@ -809,9 +809,9 @@
 Анализ
 Ряды
 ТФКП</programm>
-        <registrationEndDate>30.12.2087</registrationEndDate>
-        <userRatings>4,8</userRatings>
         <certificationConditions>CS100500 Продвинутая математика</certificationConditions>
+        <userRatings>4,8</userRatings>
+        <registrationEndDate>30.12.2087</registrationEndDate>
         <effort>10 часов в неделю</effort>
         <ratings>4,7</ratings>
         <creationDate>01.10.1989</creationDate>
@@ -824,6 +824,7 @@
         <endDate>31.12.2090</endDate>
         <language>Английский</language>
         <description>Описание курса</description>
+        <courseTitle>Продвинутая математика</courseTitle>
         <learnAfter rdf:resource="http://www.semanticweb.org/MOOCOntology#CS101_Математика"/>
         <isSimilarTo rdf:resource="http://www.semanticweb.org/MOOCOntology#CS101_Математика"/>
         <isOrganizedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Coursera"/>
