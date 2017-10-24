@@ -681,7 +681,7 @@
     <!-- http://www.semanticweb.org/MOOCOntology#EducationalInstitution -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#EducationalInstitution">
-        <rdfs:label xml:lang="en">educational institution</rdfs:label>
+        <rdfs:label xml:lang="en">Educational institution</rdfs:label>
         <rdfs:label xml:lang="ru">Образовательное учреждение</rdfs:label>
     </owl:Class>
     

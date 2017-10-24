@@ -6,6 +6,8 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  
+    
 ]>
 
 
@@ -14,14 +16,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/MOOCOntology">
         <rdfs:label xml:lang="en">MOOC Ontology</rdfs:label>
         <rdfs:label xml:lang="ru">Онтология МООК</rdfs:label>
         <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
-        <creator xml:lang="en">Romanov Aleksei</creator>
+        <creator>Romanov Aleksei</creator>
         <rdfs:comment xml:lang="en">The ontology contains a description of the Mass Open Online Course (MOOC). The interrelations between the curriculum developers, teachers, organizers, learners, educational programs, competences and subject areas are considered. The description of the attributes of the MOOC is given. The ontology does not include a description of the internal structure of the course.</rdfs:comment>
-        <creator xml:lang="en">Volchek Dmitriy</creator>
         <rdfs:comment xml:lang="ru">Онтология содержит описание Массовых Открытых Онлайн Курсов (МООК). Рассмотрены взаимосвязи между разарботчиками курсов, преподавателями, организаторами, обучающимися, учебными программами, компетенциями и предметными областями. Приведено описание атрибутов МООК. Онтология не включает описание внутренней структуры курса.</rdfs:comment>
     </owl:Ontology>
     
@@ -691,6 +693,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#Course">
         <rdfs:label xml:lang="en">Course</rdfs:label>
         <rdfs:label xml:lang="ru">Курс</rdfs:label>
+        <rdfs:comment xml:lang="ru">Главный класс отвечающий за онлайн-курс в целом</rdfs:comment>
     </owl:Class>
     
 
@@ -708,8 +711,9 @@
     <!-- http://www.semanticweb.org/MOOCOntology#EducationalInstitution -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/MOOCOntology#EducationalInstitution">
-        <rdfs:label xml:lang="en">educational institution</rdfs:label>
+        <rdfs:label xml:lang="en">Educational institution</rdfs:label>
         <rdfs:label xml:lang="ru">Образовательное учреждение</rdfs:label>
+        <rdfs:comment xml:lang="ru">Университет или организация отвечающая за сам онлайн-курс</rdfs:comment>
     </owl:Class>
     
 
