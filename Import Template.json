@@ -1,0 +1,61 @@
+{
+    "Course": "Высшая математика",
+    "Properties": 
+    [{
+        "belongsToDirection": "Технические_науки",
+        "belongsToSubject": "ЭВМ",
+        "designedForAudience": "Студенты",
+        "formsCompetency": ["МДК.101_-_Умение_жить","МДК.202_-_Умение_рисовать"],
+        "formsProfession": "Инженер",
+        "hasFeedback": "Отличный_отзыв_о_курсе",
+        "hasMaterial": "Учебник_Таненбума",
+        "hasSubtitle": "Субтитры1",
+        "hasTag": ["Матан","Интегралы"],
+        "isCreatedBy": "Кержаков_Александр_Сергеевич",
+        "isOrganizedBy": "Coursera",
+        "isProducedBy": "Университет_ИТМО",
+        "isSimilarTo": "Математика",
+        "isTakenByGroup": "Группа1",
+        "learnAfter": "Математика",
+        "approveState": "Подтвержден",
+        "certificationConditions": "Набрать более 60%",
+        "courseTitle": "Продвинутая математика",
+        "creationDate": "01.10.2016",
+        "credits": "3",
+        "currency": "USD",
+        "description": "Описание курса",
+        "effort": "10 часов в неделю",
+        "endDate": "31.12.2020",
+        "expertRatings": "4,6",
+        "format": "Онлайн",
+        "fullDescription": "Полное и длинное описание курса",
+        "language": "Английский",
+        "length": "14",
+        "numberOfCases": "134",
+        "numberOfParticipants": "43321",
+        "price": "49",
+        "programm": "Ангем,ЛинАлг,Анализ,Ряды,ТФКП",
+        "ratings": "4,7",
+        "registrationDaysLeft": "3456",
+        "registrationEndDate": "30.12.2018",
+        "source": "Coursera.org/Math_Difficult",
+        "sourceState": "Идет",
+        "startDate": "20.10.2017",
+        "termsOfParticipation": "Нет условий",
+        "updateDate": "21.20.2017",
+        "userRatings": "4,8",
+        "videoPresentation": "https://www.youtube.com/watch?v=4BhQULON4W0&amp;t=4s"
+    }],
+    "Teacher":
+    [{
+        "teacherName": "Кержаков Александр Сергеевич",
+        "teachersAcademicDegree": "Доктор технических наук",
+        "teachersPhoto": "https://im7.kommersant.ru/Issues.photo/NEWS/2017/07/13/KSP_014586_00014_1_t218_165055.jpg",
+        "teachersPosition": "Профессор"
+    }],
+    "Subtitles":
+    [{
+        "language": "Китайский"
+    }]
+}
+    
