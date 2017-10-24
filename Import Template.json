@@ -1,7 +1,7 @@
 {
     "Course": "Высшая математика",
     "Properties": 
-    [{
+    {
         "belongsToDirection": "Технические_науки",
         "belongsToSubject": "ЭВМ",
         "designedForAudience": "Студенты",
@@ -45,7 +45,7 @@
         "updateDate": "21.20.2017",
         "userRatings": "4,8",
         "videoPresentation": "https://www.youtube.com/watch?v=4BhQULON4W0&amp;t=4s"
-    }],
+    },
     "Teacher":
     [{
         "teacherName": "Кержаков Александр Сергеевич",
@@ -54,8 +54,8 @@
         "teachersPosition": "Профессор"
     }],
     "Subtitles":
-    [{
+    {
         "language": "Китайский"
-    }]
+    }
 }
     
