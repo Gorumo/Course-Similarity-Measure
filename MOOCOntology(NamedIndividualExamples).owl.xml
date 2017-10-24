@@ -15,32 +15,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/MOOCOntology">
-        <rdfs:label xml:lang="en">MOOC Ontology</rdfs:label>
-        <rdfs:label xml:lang="ru">Онтология МООК</rdfs:label>
-        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
-        <creator xml:lang="en">Romanov Aleksei</creator>
-        <rdfs:comment xml:lang="en">The ontology contains a description of the Mass Open Online Course (MOOC). The interrelations between the curriculum developers, teachers, organizers, learners, educational programs, competences and subject areas are considered. The description of the attributes of the MOOC is given. The ontology does not include a description of the internal structure of the course.</rdfs:comment>
-        <creator xml:lang="en">Volchek Dmitriy</creator>
-        <rdfs:comment xml:lang="ru">Онтология содержит описание Массовых Открытых Онлайн Курсов (МООК). Рассмотрены взаимосвязи между разарботчиками курсов, преподавателями, организаторами, обучающимися, учебными программами, компетенциями и предметными областями. Приведено описание атрибутов МООК. Онтология не включает описание внутренней структуры курса.</rdfs:comment>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/MOOCOntology#creator -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/MOOCOntology#creator"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/MOOCOntology"/>
     
 
 
@@ -124,8 +99,6 @@
     <!-- http://www.semanticweb.org/MOOCOntology#hasMaterial -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/MOOCOntology#hasMaterial">
-        <rdfs:label xml:lang="en">Has Material</rdfs:label>
-        <rdfs:label xml:lang="ru">Имеет Материал</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/MOOCOntology#Material"/>
     </owl:ObjectProperty>
@@ -801,6 +774,213 @@
         <rdfs:label xml:lang="ru">Преподаватель</rdfs:label>
         <rdfs:comment xml:lang="ru">ФИО преподавателя указывается с фото, должностью (иногда степенью),  местом работы, городом. В ряде случаев встречется расширенное описание одним полем. Предпочтителен справочник преподавателей. Возможны множественные значения. Для оптимизации справочника преподавателей предлагаю выводить ФИО и давать ссылку на профиль, если есть у Источника</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#CS100500_Продвинутая_математика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#CS100500_Продвинутая_математика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <numberOfCases rdf:datatype="&xsd;integer">134</numberOfCases>
+        <length rdf:datatype="&xsd;integer">14</length>
+        <credits rdf:datatype="&xsd;integer">3</credits>
+        <registrationDaysLeft rdf:datatype="&xsd;integer">3456</registrationDaysLeft>
+        <numberOfParticipants rdf:datatype="&xsd;integer">43321</numberOfParticipants>
+        <price rdf:datatype="&xsd;integer">49</price>
+        <termsOfParticipation>Нет условий</termsOfParticipation>
+        <sourceState>Идет</sourceState>
+        <startDate>20.10.2017</startDate>
+        <updateDate>21.20.2017</updateDate>
+        <source>Coursera.org/Math_Difficult</source>
+        <fullDescription>Полное и длинное описание курса</fullDescription>
+        <programm>Ангем
+ЛинАлг
+Анализ
+Ряды
+ТФКП</programm>
+        <registrationEndDate>30.12.2087</registrationEndDate>
+        <userRatings>4,8</userRatings>
+        <effort>10 часов в неделю</effort>
+        <ratings>4,7</ratings>
+        <creationDate>01.10.1989</creationDate>
+        <certificationConditions>Набрать более 60%</certificationConditions>
+        <format>Онлайн</format>
+        <approveState>Подтвержден</approveState>
+        <videoPresentation>https://www.youtube.com/watch?v=4BhQULON4W0&amp;t=4s</videoPresentation>
+        <expertRatings>4,6</expertRatings>
+        <currency>USD</currency>
+        <endDate>31.12.2090</endDate>
+        <language>Английский</language>
+        <description>Описание курса</description>
+        <courseTitle>Продвинутая математика</courseTitle>
+        <learnAfter rdf:resource="http://www.semanticweb.org/MOOCOntology#CS101_Математика"/>
+        <isSimilarTo rdf:resource="http://www.semanticweb.org/MOOCOntology#CS101_Математика"/>
+        <isOrganizedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Coursera"/>
+        <isTakenByGroup rdf:resource="http://www.semanticweb.org/MOOCOntology#Группа1"/>
+        <formsProfession rdf:resource="http://www.semanticweb.org/MOOCOntology#Инженер"/>
+        <isCreatedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Кержаков_Александр_Сергеевич"/>
+        <formsCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить"/>
+        <formsCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать"/>
+        <hasTag rdf:resource="http://www.semanticweb.org/MOOCOntology#Матан"/>
+        <hasFeedback rdf:resource="http://www.semanticweb.org/MOOCOntology#Отличный_отзыв_о_курсе"/>
+        <designedForAudience rdf:resource="http://www.semanticweb.org/MOOCOntology#Студенты"/>
+        <hasSubtitle rdf:resource="http://www.semanticweb.org/MOOCOntology#Субтитры1"/>
+        <belongsToDirection rdf:resource="http://www.semanticweb.org/MOOCOntology#Технические_науки"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/MOOCOntology#Университет_ИТМО"/>
+        <hasMaterial rdf:resource="http://www.semanticweb.org/MOOCOntology#Учебник_Таненбума"/>
+        <belongsToSubject rdf:resource="http://www.semanticweb.org/MOOCOntology#ЭВМ"/>
+        <hasTag rdf:resource="http://www.semanticweb.org/MOOCOntology#сложна"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#CS101_Математика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#CS101_Математика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <courseTitle>CS101 Математика</courseTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Coursera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Coursera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Organizer"/>
+        <organizerName>Coursera</organizerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Группа1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Группа1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Инженер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Инженер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Profession"/>
+        <requiresCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Кержаков_Александр_Сергеевич -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Кержаков_Александр_Сергеевич">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Teacher"/>
+        <teachersPhoto>https://im7.kommersant.ru/Issues.photo/NEWS/2017/07/13/KSP_014586_00014_1_t218_165055.jpg</teachersPhoto>
+        <teachersAcademicDegree>Доктор технических наук</teachersAcademicDegree>
+        <teacherName>Кержаков Александр Сергеевич</teacherName>
+        <teachersPosition>Профессор</teachersPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#МДК.202_-_Умение_рисовать">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Competency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Матан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Матан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Tag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Отличный_отзыв_о_курсе -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Отличный_отзыв_о_курсе">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Feedback"/>
+        <feedback>Длинный и отличный отзыв о курсе</feedback>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Студенты -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Студенты">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Audience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Субтитры1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Субтитры1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Subtitle"/>
+        <language>Китайский</language>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Технические_науки -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Технические_науки">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Университет_ИТМО -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Университет_ИТМО">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#EducationalInstitution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#Учебник_Таненбума -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#Учебник_Таненбума">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#ЭВМ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#ЭВМ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Subject"/>
+        <includesCompetency rdf:resource="http://www.semanticweb.org/MOOCOntology#МДК.101_-_Умение_жить"/>
+        <partOfDirection rdf:resource="http://www.semanticweb.org/MOOCOntology#Технические_науки"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#сложна -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/MOOCOntology#сложна">
+        <rdf:type rdf:resource="http://www.semanticweb.org/MOOCOntology#Tag"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
