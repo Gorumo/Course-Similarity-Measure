@@ -1,0 +1,24 @@
+###  http://www.semanticweb.org/MOOCOntology#80b40f261ba84c97b122e8f7026be2c2
+:80b40f261ba84c97b122e8f7026be2c2 rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Компьютерная инженерная графика. Часть 1"
+###  http://www.semanticweb.org/MOOCOntology#69e004abaec44acca4118a5385de1ce5
+:69e004abaec44acca4118a5385de1ce5 rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Цифровые устройства и микропроцессоры"
+###  http://www.semanticweb.org/MOOCOntology#2bcf443508c64b86a88f2b65bfae99af
+:2bcf443508c64b86a88f2b65bfae99af rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Русский язык и культура речи"
+###  http://www.semanticweb.org/MOOCOntology#f41f86befa4c44208dd8747db148375b
+:f41f86befa4c44208dd8747db148375b rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Основы цифровой обработки сигналов"
+###  http://www.semanticweb.org/MOOCOntology#9e32b1c62e74492883b8ca68acb0fc21
+:9e32b1c62e74492883b8ca68acb0fc21 rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Математическая физика"
+###  http://www.semanticweb.org/MOOCOntology#0f51488685034f47a385ce07966b1729
+:0f51488685034f47a385ce07966b1729 rdf:type owl:NamedIndividual ,
+:Course .
+:courseTitle "Теория вероятностей"
