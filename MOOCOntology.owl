@@ -23,6 +23,7 @@
         <creator>Romanov Aleksei</creator>
         <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">The ontology contains a description of the Mass Open Online Course (MOOC). The interrelations between the curriculum developers, teachers, organizers, learners, educational programs, competences and subject areas are considered. The description of the attributes of the MOOC is given. The ontology does not include a description of the internal structure of the course.</rdfs:comment>
+        <creator xml:lang="en">Volchek Dmitriy</creator>
         <rdfs:comment xml:lang="ru">Онтология содержит описание Массовых Открытых Онлайн Курсов (МООК). Рассмотрены взаимосвязи между разарботчиками курсов, преподавателями, организаторами, обучающимися, учебными программами, компетенциями и предметными областями. Приведено описание атрибутов МООК. Онтология не включает описание внутренней структуры курса.</rdfs:comment>
     </owl:Ontology>
     
