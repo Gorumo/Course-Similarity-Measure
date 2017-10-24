@@ -3,11 +3,10 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-  
-    
 ]>
 
 
@@ -21,8 +20,8 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/MOOCOntology">
         <rdfs:label xml:lang="en">MOOC Ontology</rdfs:label>
         <rdfs:label xml:lang="ru">Онтология МООК</rdfs:label>
-        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
         <creator>Romanov Aleksei</creator>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">The ontology contains a description of the Mass Open Online Course (MOOC). The interrelations between the curriculum developers, teachers, organizers, learners, educational programs, competences and subject areas are considered. The description of the attributes of the MOOC is given. The ontology does not include a description of the internal structure of the course.</rdfs:comment>
         <rdfs:comment xml:lang="ru">Онтология содержит описание Массовых Открытых Онлайн Курсов (МООК). Рассмотрены взаимосвязи между разарботчиками курсов, преподавателями, организаторами, обучающимися, учебными программами, компетенциями и предметными областями. Приведено описание атрибутов МООК. Онтология не включает описание внутренней структуры курса.</rdfs:comment>
     </owl:Ontology>
@@ -43,6 +42,23 @@
     <!-- http://www.semanticweb.org/MOOCOntology#creator -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/MOOCOntology#creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
     
 
 
@@ -291,6 +307,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/MOOCOntology#courseLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#courseLanguage">
+        <rdfs:label xml:lang="en">Course language</rdfs:label>
+        <rdfs:label xml:lang="ru">Язык курса</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
+        <rdfs:range rdf:resource="&xsd;language"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/MOOCOntology#courseTitle -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#courseTitle">
@@ -363,7 +390,6 @@
         <rdfs:label xml:lang="en">End date</rdfs:label>
         <rdfs:label xml:lang="ru">Дата окончания курса</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
         <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
@@ -409,18 +435,6 @@
         <rdfs:label xml:lang="ru">Расширенное описание</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/MOOCOntology#language -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#language">
-        <rdfs:label xml:lang="en">Language</rdfs:label>
-        <rdfs:label xml:lang="ru">Язык</rdfs:label>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Subtitle"/>
-        <rdfs:range rdf:resource="&xsd;language"/>
     </owl:DatatypeProperty>
     
 
@@ -553,6 +567,17 @@
         <rdfs:label xml:lang="ru">Дата начала курса</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
         <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/MOOCOntology#subtitleLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/MOOCOntology#subtitleLanguage">
+        <rdfs:label xml:lang="en">Subtitle language</rdfs:label>
+        <rdfs:label xml:lang="ru">Язык субтитров</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Subtitle"/>
+        <rdfs:range rdf:resource="&xsd;language"/>
     </owl:DatatypeProperty>
     
 
