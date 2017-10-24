@@ -308,7 +308,7 @@
         <rdfs:label xml:lang="en">Created date</rdfs:label>
         <rdfs:label xml:lang="ru">Дата создания</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -364,7 +364,7 @@
         <rdfs:label xml:lang="ru">Дата окончания курса</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -519,7 +519,7 @@
         <rdfs:label xml:lang="en">Registration end date</rdfs:label>
         <rdfs:label xml:lang="ru">Дата окончания регистрации</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -552,8 +552,7 @@
         <rdfs:label xml:lang="en">Start date</rdfs:label>
         <rdfs:label xml:lang="ru">Дата начала курса</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Group"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -619,7 +618,7 @@
         <rdfs:label xml:lang="en">Update date</rdfs:label>
         <rdfs:label xml:lang="ru">Дата изменения</rdfs:label>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/MOOCOntology#Course"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
