@@ -1,0 +1,504 @@
+@prefix : <http://www.semanticweb.org/MOOCOntology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/MOOCOntology> .
+
+<http://www.semanticweb.org/MOOCOntology> rdf:type owl:Ontology ;
+                                           :creator "Romanov Aleksei" ;
+                                           rdfs:label "Онтология МООК"@ru ,
+                                                      "MOOC Ontology"@en ;
+                                           owl:versionInfo "1.1"@en ;
+                                           rdfs:comment "Онтология содержит описание Массовых Открытых Онлайн Курсов (МООК). Рассмотрены взаимосвязи между разарботчиками курсов, преподавателями, организаторами, обучающимися, учебными программами, компетенциями и предметными областями. Приведено описание атрибутов МООК. Онтология не включает описание внутренней структуры курса."@ru ;
+                                           :creator "Volchek Dmitriy"@en ;
+                                           rdfs:comment "The ontology contains a description of the Mass Open Online Course (MOOC). The interrelations between the curriculum developers, teachers, organizers, learners, educational programs, competences and subject areas are considered. The description of the attributes of the MOOC is given. The ontology does not include a description of the internal structure of the course."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/MOOCOntology#creator
+:creator rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/MOOCOntology#belongsToActivity
+:belongsToActivity rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Course ;
+                   rdfs:range :Activity ;
+                   rdfs:label "Belongs to activity"@en ,
+                              "Принадлежит области деятельности"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#belongsToDirection
+:belongsToDirection rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Course ;
+                    rdfs:range :Direction ;
+                    rdfs:label "Belongs to Direction"@en ,
+                               "Входит в направление"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#formsCompetency
+:formsCompetency rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Course ;
+                 rdfs:range :Competency ;
+                 rdfs:label "Forms competency"@en ,
+                            "Формирует компетенцию"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#hasCredit
+:hasCredit rdf:type owl:ObjectProperty ;
+           rdfs:domain :Course ;
+           rdfs:range :Credit ;
+           rdfs:label "Has credit"@en ,
+                      "Содержит кредиты (зачетные единицы)"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#hasFeedback
+:hasFeedback rdf:type owl:ObjectProperty ;
+             rdfs:domain :Course ;
+             rdfs:range :Feedback ;
+             rdfs:label "Has feedback"@en ,
+                        "Имеет отзыв"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#hasRequirements
+:hasRequirements rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Course ;
+                 rdfs:range :Requirements ;
+                 rdfs:label "Has requirements"@en ,
+                            "Содержит требования"@en .
+
+
+###  http://www.semanticweb.org/MOOCOntology#isAcceptedInInstitution
+:isAcceptedInInstitution rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Credit ;
+                         rdfs:range :Institution .
+
+
+###  http://www.semanticweb.org/MOOCOntology#isCreatedBy
+:isCreatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Course ;
+             rdfs:range :Teacher ;
+             rdfs:comment "Преподаватель создает курс"@ru ;
+             rdfs:label "Is created by"@en ,
+                        "Создан"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#isOrganizedBy
+:isOrganizedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Course ;
+               rdfs:range :Partner ;
+               rdfs:comment "Провайдер курсов"@ru ;
+               rdfs:label "is organized by"@en ,
+                          "Организован"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#isProducedBy
+:isProducedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Course ;
+              rdfs:range :Institution ;
+              rdfs:label "Is produced by the educational institution"@en ,
+                         "Создан образовательным учреждением"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#isgetForDirection
+:isgetForDirection rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Credit ;
+                   rdfs:range :Direction .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/MOOCOntology#accreditation
+:accreditation rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Course ;
+               rdfs:range xsd:string ;
+               rdfs:label "Accreditation"@en ,
+                          "Аккредитация"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#activityTitle
+:activityTitle rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range xsd:string ;
+               rdfs:label "Activity title"@en ,
+                          "Название области деятельности"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#competencyValue
+:competencyValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Competency ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "Компетенция"@ru ,
+                            "Сompetency"@en .
+
+
+###  http://www.semanticweb.org/MOOCOntology#content
+:content rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Course ;
+         rdfs:range xsd:string ;
+         rdfs:label "Tabel of contents"@en ,
+                    "Содержание курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#createdAt
+:createdAt rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Course ;
+           rdfs:range xsd:date ;
+           rdfs:label "Created date"@en ,
+                      "Дата создания"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string ;
+             rdfs:label "Description"@en ,
+                        "Описание"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#directionCode
+:directionCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Direction ;
+               rdfs:range xsd:string ;
+               rdfs:label "Direction code"@en ,
+                          "Код направления"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#directionTitle
+:directionTitle rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Direction ;
+                rdfs:range xsd:string ;
+                rdfs:label "Direction title"@en ,
+                           "Навание направления"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Course ;
+          rdfs:range xsd:string ;
+          rdfs:label "Length"@en ,
+                     "Длительность курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#expertsRating
+:expertsRating rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Course ;
+               rdfs:range xsd:int ;
+               rdfs:label "Expert Ratings"@en ,
+                          "Рейтинг (Экспертный)"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#externalUrl
+:externalUrl rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string ;
+             rdfs:label "Course url"@en ,
+                        "Ссылка на курс на сайте платформы"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#feedbackDate
+:feedbackDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Feedback ;
+              rdfs:range xsd:date ;
+              rdfs:label "Feedback date"@en ,
+                         "Дата отзыва"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#feedbackImage
+:feedbackImage rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Feedback ;
+               rdfs:range xsd:string ;
+               rdfs:label "Feedback Image"@en ,
+                          "Изображение отзыва"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#feedbackIsExpert
+:feedbackIsExpert rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Feedback ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "Feedback is expert"@en ,
+                             "Отзыв эксперта"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#feedbackRating
+:feedbackRating rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Feedback ;
+                rdfs:range xsd:int ;
+                rdfs:label "Rating value in feedback"@en ,
+                           "Рейтинг в отзыве"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#feedbackText
+:feedbackText rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Feedback ;
+              rdfs:range xsd:string ;
+              rdfs:label "Feedback text"@en ,
+                         "Текст отзыва"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#finishedAt
+:finishedAt rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            rdfs:range xsd:date ;
+            rdfs:label "End date"@en ,
+                       "Дата окончания курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#hasCertificate
+:hasCertificate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Course ;
+                rdfs:range xsd:int ;
+                rdfs:label "Has certificate"@en ,
+                           "Предусматривает получение сертификата"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#image
+:image rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Course ;
+       rdfs:range xsd:string ;
+       rdfs:label "Course Image"@en ,
+                  "Изображение курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#institutionDescription
+:institutionDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Institution ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "Educational institution description"@en ,
+                                   "Описание образовательного учреждения"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#institutionImage
+:institutionImage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Institution ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "Educational institution image"@en ,
+                             "Изображение образовательного учреждения"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#institutionTitle
+:institutionTitle rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Institution ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "Educational Institution title"@en ,
+                             "Название образовательного учреждения"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#institutionUrl
+:institutionUrl rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Institution ;
+                rdfs:range xsd:string ;
+                rdfs:label "Educational institution link"@en ,
+                           "Ссылка на образовательное учреждение"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#langugage
+:langugage rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Course ;
+           rdfs:range xsd:language ;
+           rdfs:label "Course language"@en ,
+                      "Язык курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#lecturesNumber
+:lecturesNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Course ;
+                rdfs:range xsd:int ;
+                rdfs:label "Nimber of lectures"@en ,
+                           "Количество лекций"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#partnerDescription
+:partnerDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Partner ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "Partner description"@en ,
+                               "Описание платформы"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#partnerImage
+:partnerImage rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Partner ;
+              rdfs:range xsd:string ;
+              rdfs:label "Partner Image"@en ,
+                         "Изображение платформы"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#partnerTitle
+:partnerTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Partner ;
+              rdfs:range xsd:string ;
+              rdfs:label "Partner title"@en ,
+                         "Название платформы"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#partnerUrl
+:partnerUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Partner ;
+            rdfs:range xsd:string ;
+            rdfs:label "Partner link"@ru ,
+                       "Ссылка на платформу"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Course ;
+        rdfs:range xsd:int ;
+        rdfs:label "User ratings"@en ,
+                   "Рейтинг пользователей"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#recordEndAt
+:recordEndAt rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:date ;
+             rdfs:label "Registration end date"@en ,
+                        "Дата окончания регистрации"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#startedAt
+:startedAt rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Course ;
+           rdfs:range xsd:date ;
+           rdfs:label "Start date"@en ,
+                      "Дата начала курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#teacherDescription
+:teacherDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Teacher ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "Teacher description"@en ,
+                               "Описание преподавателя"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#teacherImage
+:teacherImage rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Teacher ;
+              rdfs:range xsd:string ;
+              rdfs:label "Teacher's photo"@en ,
+                         "Фото преподавателя"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#teacherTitle
+:teacherTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Teacher ;
+              rdfs:range xsd:string ;
+              rdfs:label "Teacher's name"@en ,
+                         "ФИО преподавателя"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Course ;
+       rdfs:range xsd:string ;
+       rdfs:label "Title"@en ,
+                  "Название курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#totalVisitorsNumber
+:totalVisitorsNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Course ;
+                     rdfs:range xsd:int ;
+                     rdfs:label "Number of registrations on all course versions"@en ,
+                                "Количество записей на все версии курса"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#visitorsNumber
+:visitorsNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Course ;
+                rdfs:range xsd:int ;
+                rdfs:label "Number of registrations"@en ,
+                           "Количество записей на курс"@ru .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/MOOCOntology#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:label "Activity"@en ,
+                     "Область деятельности"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Competency
+:Competency rdf:type owl:Class ;
+            rdfs:comment "Заполняется навыками, которые студенты получат, изучив курс"@ru ;
+            rdfs:label "Competency"@en ,
+                       "Формируемые компетенции"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Course
+:Course rdf:type owl:Class ;
+        rdfs:comment "Главный класс отвечающий за онлайн-курс в целом"@ru ;
+        rdfs:label "Course"@en ,
+                   "Курс"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Credit
+:Credit rdf:type owl:Class ;
+        rdfs:comment "Количество кредитов(зачетных единиц)  для перезачета в учебном заведении"@ru ;
+        rdfs:label "Credits"@en ,
+                   "Кредиты"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Direction
+:Direction rdf:type owl:Class ;
+           rdfs:comment "Описывает общую профессионально-образовательную область, в рамках которой осуществляется подготовка бакалавров, инженеров и магистров."@ru ;
+           rdfs:label "Direction"@en ,
+                      "Направление подготовки"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Feedback
+:Feedback rdf:type owl:Class ;
+          rdfs:comment "Фото пользователя, ФИО, роль (эксперт/пользователь), дата публикации, оценка, отзыв"@ru ;
+          rdfs:label "Feedback"@en ,
+                     "Отзыв"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Institution
+:Institution rdf:type owl:Class ;
+             rdfs:comment "Университет или организация отвечающая за сам онлайн-курс"@ru ;
+             rdfs:label "Educational institution"@en ,
+                        "Образовательное учреждение"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Partner
+:Partner rdf:type owl:Class ;
+         rdfs:comment "Площадка, на которой размещаются курса"@ru ;
+         rdfs:label "Partner"@en ,
+                    "Плоащадка (партнер)"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Requirements
+:Requirements rdf:type owl:Class ;
+              rdfs:comment "Необходимые нываки для успешного прохождения курса"@ru ;
+              rdfs:label "Requirements"@en ,
+                         "Требования"@ru .
+
+
+###  http://www.semanticweb.org/MOOCOntology#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:comment "ФИО преподавателя указывается с фото, должностью (иногда степенью),  местом работы, городом. В ряде случаев встречется расширенное описание одним полем. Предпочтителен справочник преподавателей. Возможны множественные значения. Для оптимизации справочника преподавателей предлагаю выводить ФИО и давать ссылку на профиль, если есть у Источника"@ru ;
+         rdfs:label "Teacher"@en ,
+                    "Преподаватель"@ru .
+

@@ -1,0 +1,232 @@
+[
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af14",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.8529411764705882
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "value": 0.2222222222222222
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "value": 0.2222222222222222
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "value": 0.15384615384615385
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.1282051282051282
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.14634146341463414
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.0975609756097561
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#167beec6-aee9-46d9-8c5a-22deccef41cd",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.09803921568627451
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "value": 0.1111111111111111
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.1282051282051282
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.09302325581395349
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.0975609756097561
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8c55aeb5-daee-4087-bd76-1135f93877ab",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.12
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "value": 0.2222222222222222
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "value": 0.2222222222222222
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "value": 0.1111111111111111
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.1282051282051282
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.09302325581395349
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.0975609756097561
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#d0246407-7d5a-4a1c-9c93-798074956f13",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.09803921568627451
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "value": 0.1891891891891892
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "value": 0.1111111111111111
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.1282051282051282
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.11904761904761904
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.0975609756097561
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ec446257-dfbf-478f-b52a-b1e7b5399f0e",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.12
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "value": 0.1111111111111111
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.1282051282051282
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.09302325581395349
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.0975609756097561
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#8ec6eda1-af0b-4405-967a-243a877d8c27",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.09803921568627451
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "value": 0.15384615384615385
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.125
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.12962962962962962
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#430ba5d2-7ee5-43ce-a11f-ed8df4f274fb",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.125
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "value": 0.14634146341463414
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.15384615384615385
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#ba1494f8-2c8f-4e50-b95b-c90af3f2ccf4",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.12
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "value": 0.14285714285714285
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#bdf8ef7f-e2fa-4e5c-84f3-2a8bb738ef40",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.11320754716981132
+  },
+  {
+    "uri1": "http://www.semanticweb.org/MOOCOntology#1112bd1c-ff4b-4655-a94b-04f3049c1557",
+    "uri2": "http://www.semanticweb.org/MOOCOntology#4c425f90-d57c-4837-af40-1d71a086af15",
+    "value": 0.16326530612244897
+  }
+]
